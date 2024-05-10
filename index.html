@@ -5,43 +5,7 @@
     <meta name="viewport" content="width=], initial-scale=1.0">
     <title>Project Traffic Light</title>
 
-    <link rel="stylesheet" href="style.css">
-
-    <script>
-        function changeColor() {          
-            var lightOneClass = document.getElementById("lightOne").className;
-            var lightTwoClass = document.getElementById("lightTwo").className;
-            var lightThreeClass = document.getElementById("lightThree").className;
-            
-            if (lightOneClass == 'light-off') {
-                if (lightTwoClass == 'light-off') {
-                    if (lightThreeClass == 'light-off') {
-                        document.getElementById("lightOne").className = 'red-light';   
-                        document.getElementById("lightTwo").className = 'light-off';   
-                        document.getElementById("lightThree").className = 'light-off';   
-                    } else {
-                        document.getElementById("lightOne").className = 'red-light';   
-                        document.getElementById("lightTwo").className = 'light-off';   
-                        document.getElementById("lightThree").className = 'light-off'; 
-                    }
-                } else {
-                    document.getElementById("lightOne").className = 'light-off';   
-                    document.getElementById("lightTwo").className = 'light-off';                       
-                    document.getElementById("lightThree").className = 'green-light'; 
-                }
-            } else {
-                document.getElementById("lightOne").className = 'light-off';   
-                document.getElementById("lightTwo").className = 'yellow-light';   
-                document.getElementById("lightThree").className = 'light-off'; 
-            }         
-
-
-
-
-
-        }
-
-    </script>
+    <link rel="stylesheet" href="style.css">    
 </head>
 <body>
     <div class="container">
@@ -61,6 +25,9 @@
 
         <button onclick="changeColor()" >Click Me</button>
     </div>
+
+    <script src="javascript.js"></script>
+
     
 </body>
 </html>
