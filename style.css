@@ -1,0 +1,79 @@
+body {
+    background-color: #000;       
+}
+
+button {
+    /*Cor de fundo*/
+    background-color: #1D0C1F;
+    /*Cor do conteudo, no caso o texto*/
+    color: #EDEBF6;
+    /*Sem borda*/
+    border: none;
+    /*Margem interna*/
+    padding: 15px 32px;
+    /*Efeitos para o Texto*/
+    text-decoration: none;
+    /*Tamanho da fonte*/
+    font-size: 1.2rem;
+    /*Canto do elemento, dando efeito arredondado*/
+    border-radius: 4px;
+    /*Alterando o ponteiro do cursos*/
+    cursor: pointer;
+
+}
+
+.container {
+    background-color: #FFECCE ;
+    padding: 40px;   
+    width: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.traffic-light {
+    background-color: #000;
+    width: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.panel {
+    background-color: #808080;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.light {
+    width: 50px;    
+    height: 50px;    
+    margin: auto;
+
+    border-color: #000;
+    border-width: medium;
+    border-style: solid;
+    border-radius: 50%;
+}         
+
+.red-light {    
+    background-color: #FE0000;    
+}
+          
+.yellow-light {    
+    background-color: #FFFF00;    
+}
+         
+.green-light {    
+    background-color: #07F607;
+}
+
+.light-off {    
+    background-color: #3E3E3E;    
+}         

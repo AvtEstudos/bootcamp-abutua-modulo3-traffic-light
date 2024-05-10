@@ -3,25 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=], initial-scale=1.0">
-    <title>Document</title>
+    <title>Project Traffic Light</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function changeColor() {          
+            var lightOneClass = document.getElementById("lightOne").className;
+            var lightTwoClass = document.getElementById("lightTwo").className;
+            var lightThreeClass = document.getElementById("lightThree").className;
+            
+            if (lightOneClass == 'light-off') {
+                if (lightTwoClass == 'light-off') {
+                    if (lightThreeClass == 'light-off') {
+                        document.getElementById("lightOne").className = 'red-light';   
+                        document.getElementById("lightTwo").className = 'light-off';   
+                        document.getElementById("lightThree").className = 'light-off';   
+                    } else {
+                        document.getElementById("lightOne").className = 'red-light';   
+                        document.getElementById("lightTwo").className = 'light-off';   
+                        document.getElementById("lightThree").className = 'light-off'; 
+                    }
+                } else {
+                    document.getElementById("lightOne").className = 'light-off';   
+                    document.getElementById("lightTwo").className = 'light-off';                       
+                    document.getElementById("lightThree").className = 'green-light'; 
+                }
+            } else {
+                document.getElementById("lightOne").className = 'light-off';   
+                document.getElementById("lightTwo").className = 'yellow-light';   
+                document.getElementById("lightThree").className = 'light-off'; 
+            }         
+
+
+
+
+
+        }
+
+    </script>
 </head>
 <body>
     <div class="container">
         <div class="traffic-light">
             <div class="panel">
-                <div class="red-light">
+                <div id="lightOne" class="light light-off">
 
                 </div>
-                <div class="yellow-light">
+                <div id="lightTwo" class="light light-off">
 
                 </div>
-                <div class="gree-light">
-                    
+                <div id="lightThree" class="light light-off">
+
                 </div>
             </div>
         </div>
 
-        <button>Click Me</button>
+        <button onclick="changeColor()" >Click Me</button>
     </div>
     
 </body>
